@@ -14,7 +14,7 @@ const baseConfig = {
     coupleNameFormat: "GROOM_FIRST"
   },
   venue: {
-    name: "海港城酒店",
+    name: "海港城酒家",
     addressLine1: "广东省中山市,",
     addressLine2: "东区中山五路65号",
     city: "广东中山",

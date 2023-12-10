@@ -112,6 +112,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                           data-delay="1s"
                           style={{ animationDelay: '1s' }}
                         >{venue.name}, {venue.city}.</span>
+                        <br />{"(向下滑动)"}
                       </div>
                     </div>
                   </div>
@@ -188,7 +189,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
             className="contact_wrapper wow fadeInUpBig"
             data-wow-duration="1.3s"
             data-wow-delay="0.4s"
-            style={{ paddingBottom: 30, boxShadow: 'none', visibility: 'visible', animationDuration: '1.3s', animationDelay: '0.4s', animationName: 'fadeInUp', height: '550px'}}
+            style={{ paddingBottom: 30, boxShadow: 'none', visibility: 'visible', animationDuration: '1.3s', animationDelay: '0.4s', animationName: 'fadeInUp'}}
           >
             <div className="row align-content-center">
               <div className="col-lg-6">
@@ -261,17 +262,17 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                   }
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6" >
               <div
                 className="wow fadeIn"
                 data-wow-duration="1.3s"
                 data-wow-delay="0.6s"
-                style={{ visibility: 'visible', animationDuration: '1.3s', animationDelay: '0.6s', animationName: 'fadeIn' }}
+                style={{ visibility: 'visible', animationDuration: '1.3s', animationDelay: '0.6s', animationName: 'fadeIn', height: '498px' }}
               >
-                <div className="coming_soon_count d-flex justify-content-end pt-20">
+                <div className="coming_soon_count d-flex justify-content-end pt-70">
                   <div
                     style={{ marginRight: 20, width: 360, height: 188, backgroundColor: 'transparent' }}
-                    className="single_count d-flex align-items-center justify-content-center mt-30"
+                    className="single_count d-flex align-items-center align-content-center mt-30"
                   >
                     <div className="count_content" style={{ zIndex: 1, paddingTop: 120 }}>
                       <img style={{ borderRadius: 5 }} src="/assets/images/IPAdapter_00250.png" alt="Couple photo" />
@@ -279,7 +280,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                         maxWidth: '75vw',
                         overflowX: 'hidden',
                         textOverflow: 'ellipsis',
-                        marginTop: 10,
+                        marginTop: 0,
                       }}>
                         {"AI generated content, with IP adapter, control net and stable diffusion model."}
                       </a>
@@ -326,6 +327,9 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
             </a>
           </small>
         </div>)}
+        <div className="coming_soon_shape_2">
+          <img src="/assets/images/shape-2.png" alt="shape" />
+        </div>
       </footer>
     </div >
   )
