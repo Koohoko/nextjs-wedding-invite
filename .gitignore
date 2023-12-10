@@ -1,5 +1,5 @@
 .next
-src/config/app.js
+# src/config/app.js
 now.*.json
 node_modules
 guest_list.csv
