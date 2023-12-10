@@ -1,6 +1,6 @@
 const baseConfig = {
   weddingDay: "星期一",
-  weddingTime: "17:30 恭候；18:30 入席",
+  weddingTime: "5时恭候 6时入席 7时晚宴",
   weddingDate: "2024年 1月15日",
   showBuiltWithInfo: true,
   showQrCode: false,

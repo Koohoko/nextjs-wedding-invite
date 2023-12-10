@@ -281,8 +281,9 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                         overflowX: 'hidden',
                         textOverflow: 'ellipsis',
                         marginTop: 0,
+                        fontSize: '14px',
                       }}>
-                        {"AI generated content, with IP adapter, control net and stable diffusion model."}
+                        {"AI generated content, with IP adapter, control net, and the stable diffusion model."}
                       </a>
                     </div>
                   </div>
