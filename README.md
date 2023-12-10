@@ -1,5 +1,8 @@
 <h1 align="center">NextJS Wedding Invitation Template</h1>
 
+### Updates from 2023
+- We need nodejs 16 to run this. (use nvm to manage version)
+
 ### Features
 
 - configurable parameters (e.g. map url, event date). see: `config/app.sample.js`
