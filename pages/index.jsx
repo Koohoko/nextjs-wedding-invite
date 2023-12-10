@@ -111,8 +111,8 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                           data-animation="fadeInUp"
                           data-delay="1s"
                           style={{ animationDelay: '1s' }}
-                        >{venue.name}, {venue.city}.</span>
-                        <br />{"(向下滑动)"}
+                        >{venue.name}, {venue.city}</span>
+                        <br /><a href="#coming_soon">(向下滑动)</a>
                       </div>
                     </div>
                   </div>
@@ -244,7 +244,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                         marginBottom: 10,
                       }}><b>{venue.name}</b></a>
                     <br />{venue.addressLine1}
-                    <br />{venue.addressLine2}.
+                    <br />{venue.addressLine2}
                   </p>
                   <p className="text" style={{ marginTop: 10 }}>
                     <b>{weddingDate} · {weddingTime}</b>

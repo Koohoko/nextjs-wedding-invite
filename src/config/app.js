@@ -1,11 +1,11 @@
 const baseConfig = {
   weddingDay: "星期一",
-  weddingTime: "19:00 - 21:00",
+  weddingTime: "17:30 恭候；18:30 入席",
   weddingDate: "2024年 1月15日",
   showBuiltWithInfo: true,
   showQrCode: false,
   calendarInfo: {
-    timeStartISO: "2024-01-15T19:00:00+08:00",
+    timeStartISO: "2024-01-15T17:30:00+08:00",
     timeEndISO: "2024-01-15T21:00:00+08:00"
   },
   coupleInfo: {
@@ -15,8 +15,8 @@ const baseConfig = {
   },
   venue: {
     name: "海港城酒家",
-    addressLine1: "广东省中山市,",
-    addressLine2: "东区中山五路65号",
+    addressLine1: "广东省 中山市",
+    addressLine2: "东区 中山五路65号",
     city: "广东中山",
     country: "中国",
     mapUrl: "https://surl.amap.com/3oc1XUnl1m1LU"
