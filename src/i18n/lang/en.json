@@ -1,11 +1,11 @@
 {
   "siteIntro": "WE ARE GETTING MARRIED",
-  "eventDate": "Event Date",
+  "eventDate": "晚宴日期",
   "invitationGreeting": "Dear",
-  "invitationIntro": "You Are Cordially Invited",
-  "invitationContent": "Our joy will be more complete with your presence in our special day.",
+  "invitationIntro": "不见不散",
+  "invitationContent": "在这个特别的日子里，希望可以与所有陪伴，支持过我们的亲朋好友们，分享我们的喜悦😘",
   "invitationContentTextAlign": "left",
-  "invitationOutro": "We are looking forward to seeing you.",
+  "invitationOutro": "诚挚欢迎您的光临😬",
   "btnAddToMyCalendar": "Add to my calendar",
   "guestCheckin": {
     "pleaseScanInvitation": "Please scan your invitation.."

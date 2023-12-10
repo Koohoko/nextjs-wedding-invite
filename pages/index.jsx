@@ -111,7 +111,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                           data-animation="fadeInUp"
                           data-delay="1s"
                           style={{ animationDelay: '1s' }}
-                        >{venue.name}, {venue.city}, {venue.country}.</span>
+                        >{venue.name}, {venue.city}.</span>
                       </div>
                     </div>
                   </div>
@@ -160,7 +160,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                   >
                     <div className="count_content" style={{ zIndex: 1, paddingTop: 20 }}>
                       <a href={venue.mapUrl}>
-                        <img style={{ borderRadius: 5 }} src="/assets/images/oval-hotel-map-horizontal.png" alt="oval hotel map" />
+                        <img style={{ borderRadius: 5 }} src="/assets/images/hotel-map-horizontal.png" alt="hotel map" />
                       </a>
                       <a href={venue.mapUrl} style={{
                         maxWidth: '75vw',
@@ -188,10 +188,10 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
             className="contact_wrapper wow fadeInUpBig"
             data-wow-duration="1.3s"
             data-wow-delay="0.4s"
-            style={{ paddingBottom: 30, boxShadow: 'none', visibility: 'visible', animationDuration: '1.3s', animationDelay: '0.4s', animationName: 'fadeInUp' }}
+            style={{ paddingBottom: 30, boxShadow: 'none', visibility: 'visible', animationDuration: '1.3s', animationDelay: '0.4s', animationName: 'fadeInUp', height: '550px'}}
           >
-            <div className="row justify-content-center">
-              <div className="col-lg-9">
+            <div className="row align-content-center">
+              <div className="col-lg-6">
                 <div className="section_title text-center pb-30">
                   {guest.name && (<div style={{
                     textAlign: 'center',
@@ -243,8 +243,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                         marginBottom: 10,
                       }}><b>{venue.name}</b></a>
                     <br />{venue.addressLine1}
-                    <br />{venue.addressLine2}
-                    <br />{venue.country}.
+                    <br />{venue.addressLine2}.
                   </p>
                   <p className="text" style={{ marginTop: 10 }}>
                     <b>{weddingDate} · {weddingTime}</b>
@@ -262,6 +261,33 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                   }
                 </div>
               </div>
+              <div className="col-lg-6">
+              <div
+                className="wow fadeIn"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.6s"
+                style={{ visibility: 'visible', animationDuration: '1.3s', animationDelay: '0.6s', animationName: 'fadeIn' }}
+              >
+                <div className="coming_soon_count d-flex justify-content-end pt-20">
+                  <div
+                    style={{ marginRight: 20, width: 360, height: 188, backgroundColor: 'transparent' }}
+                    className="single_count d-flex align-items-center justify-content-center mt-30"
+                  >
+                    <div className="count_content" style={{ zIndex: 1, paddingTop: 120 }}>
+                      <img style={{ borderRadius: 5 }} src="/assets/images/IPAdapter_00250.png" alt="Couple photo" />
+                      <a style={{
+                        maxWidth: '75vw',
+                        overflowX: 'hidden',
+                        textOverflow: 'ellipsis',
+                        marginTop: 10,
+                      }}>
+                        {"AI generated content, with IP adapter, control net and stable diffusion model."}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -275,13 +301,13 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
         <div className="container">
           <div className="footer_widget pt-50 pb-10 text-center">
             <div className="footer_logo">
-              {logo.footerLogo &&
+              {/* {logo.footerLogo &&
                 (logo.footerLogoType === "mp4" ?
                   <video height="140" autoPlay muted loop>
                     <source src={logo.footerLogo} type="video/mp4" />
                   </video>
                   : <img src={logo.footerLogo} />
-                )}
+                )} */}
             </div>
             <div className="footer_title">
               <h3 className="title">
@@ -295,7 +321,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
           marginBottom: 40,
         }}>
           <small>
-            <a style={{ color: 'grey' }} href="https://github.com/wzulfikar/nextjs-wedding-invite">
+            <a style={{ color: 'grey' }} href="https://github.com/Koohoko/nextjs-wedding-invite">
               Built with&nbsp;<object style={{ height: "0.5rem" }} data="/assets/images/heart.svg" type="image/svg+xml"></object>&nbsp;using NextJS
             </a>
           </small>

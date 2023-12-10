@@ -1,6 +1,6 @@
 import I18n from "i18n-js";
 import en from "./lang/en";
-import id from "./lang/id";
+import cn from "./lang/cn";
 
 const supportedLanguages = [
   {
@@ -9,9 +9,9 @@ const supportedLanguages = [
     translations: en
   },
   {
-    code: "id",
+    code: "cn",
     label: "Indonesia",
-    translations: id
+    translations: cn
   }
 ];
 
