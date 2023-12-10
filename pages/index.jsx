@@ -302,13 +302,13 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
         <div className="container">
           <div className="footer_widget pt-50 pb-10 text-center">
             <div className="footer_logo">
-              {/* {logo.footerLogo &&
+              {logo.footerLogo &&
                 (logo.footerLogoType === "mp4" ?
                   <video height="140" autoPlay muted loop>
                     <source src={logo.footerLogo} type="video/mp4" />
                   </video>
-                  : <img src={logo.footerLogo} />
-                )} */}
+                  : <img style={{ maxHeight: 58, margin: 0, marginTop: 0 }} src={logo.footerLogo} alt="logo" />
+                )}
             </div>
             <div className="footer_title">
               <h3 className="title">
