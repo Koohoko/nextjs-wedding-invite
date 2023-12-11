@@ -107,11 +107,19 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                           {coupleName}
                         </h2>
                         <span
+                          className="location2"
+                          data-animation="fadeInUp"
+                          data-delay="1s"
+                          style={{ animationDelay: '1s', lineHeight: '1'}}
+                        >婚礼请柬</span>
+                        <br />
+                        <span
                           className="location"
                           data-animation="fadeInUp"
                           data-delay="1s"
                           style={{ animationDelay: '1s' }}
                         >{venue.name}, {venue.city}</span>
+                        
                         <br /><a href="#coming_soon">(向下滑动)</a>
                       </div>
                     </div>
@@ -213,7 +221,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                     margin: 'auto',
                   }}>
                     <p style={{
-                      fontSize: '1rem',
+                      fontSize: '1.3rem',
                       lineHeight: 'inherit',
                       color: 'dimgrey',
                       textAlign: t('invitationContentTextAlign')
@@ -267,27 +275,21 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                 className="wow fadeIn"
                 data-wow-duration="1.3s"
                 data-wow-delay="0.6s"
-                style={{ visibility: 'visible', animationDuration: '1.3s', animationDelay: '0.6s', animationName: 'fadeIn', height: '498px' }}
+                style={{ visibility: 'visible', animationDuration: '1.3s', animationDelay: '0.6s', animationName: 'fadeIn'}}
               >
-                <div className="coming_soon_count d-flex justify-content-end pt-70">
-                  <div
-                    style={{ marginRight: 20, width: 360, height: 188, backgroundColor: 'transparent' }}
-                    className="single_count d-flex align-items-center align-content-center mt-30"
-                  >
-                    <div className="count_content" style={{ zIndex: 1, paddingTop: 120 }}>
-                      <img style={{ borderRadius: 5 }} src="/assets/images/IPAdapter_00250.png" alt="Couple photo" />
-                      <a style={{
-                        maxWidth: '75vw',
-                        overflowX: 'hidden',
-                        textOverflow: 'ellipsis',
-                        marginTop: 0,
-                        fontSize: '14px',
-                      }}>
-                        {"AI generated content, with IP adapter, control net, and the stable diffusion model."}
-                      </a>
-                    </div>
-                  </div>
-                </div>
+              <div className="count_content" style={{ zIndex: 1, paddingTop: 0 }}>
+                <img style={{ borderRadius: 5 }} src="/assets/images/IPAdapter_00250.png" alt="Couple photo" />
+                <a style={{
+                  maxWidth: '95vw',
+                  overflowX: 'hidden',
+                  textOverflow: 'ellipsis',
+                  marginTop: 0,
+                  fontSize: '12.5px',
+                  textAlign: 'center',
+                }}>
+                  {"AI generated content, developed using IP-Adapter, ControlNet, and the Stable Diffusion model."}
+                </a>
+              </div>
               </div>
             </div>
             </div>
