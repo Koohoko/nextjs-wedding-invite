@@ -250,12 +250,13 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                       style={{
                         borderBottom: '0.2rem solid',
                         marginBottom: 10,
+                        fontSize: '1.2em',
                       }}><b>{venue.name}</b></a>
                     <br />{venue.addressLine1}
                     <br />{venue.addressLine2}
                   </p>
-                  <p className="text" style={{ marginTop: 10 }}>
-                    <b>{weddingDate} · {weddingTime}</b>
+                  <p className="text" style={{ marginTop: 10, fontSize: '1.2em', }}>
+                    <b>{weddingDate} <br /> {weddingTime}</b>
                   </p>
 
                   {t('invitationClosing') && !t('invitationClosing').startsWith("[missing") &&
@@ -326,7 +327,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
         }}>
           <small>
             <a style={{ color: 'grey' }} href="https://github.com/Koohoko/nextjs-wedding-invite">
-              Built with&nbsp;<object style={{ height: "0.5rem" }} data="/assets/images/heart.svg" type="image/svg+xml"></object>&nbsp;using NextJS
+              Built using NextJS
             </a>
           </small>
         </div>)}

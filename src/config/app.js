@@ -1,6 +1,6 @@
 const baseConfig = {
   weddingDay: "星期一",
-  weddingTime: "5时恭候; 6时入席; 7时晚宴",
+  weddingTime: "5时恭候; 6时入席; 6时半晚宴",
   weddingDate: "2024年 1月15日",
   showBuiltWithInfo: true,
   showQrCode: false,
@@ -14,7 +14,7 @@ const baseConfig = {
     coupleNameFormat: "GROOM_FIRST"
   },
   venue: {
-    name: "海港城酒家",
+    name: "海港城大酒楼",
     addressLine1: "广东省 中山市",
     addressLine2: "东区 中山五路65号",
     city: "广东中山",
